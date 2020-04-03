@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body class="container">
+        <div class="container-fluid mt-1 mt-sm-0 fixed-top">
+         <div class="row justify-content-between mb-0 mb-sm-3">
+           <nav class="navbar navbar-expand-lg d-flex align-center navbar-success">
+            <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid d-none d-sm-block">
+              <img src="img/component (21).png" alt="mobile logo" class="ml-3 d-sm-none"></a>
+            </nav>
+           <nav class="navbar navbar-expand-lg navbar-light">
+            <a type="button" href="volunteer.html" class="btn btn-success mr-2 mr-md-5">Become a Volunteer</a>
+            </nav> 
+         </div> 
+        </div>
+        <div class="container mt-5">
+            <div class="row offset-sm-1 mt-5">
+                <div class="col-sm-10 mt-2">
+                    <h1 class="text-center">FAQs</h1>
+                    <p class="text-center">Questions are normal. We are working on getting some FAQs on here soon. In the meantime ask us your question and we will respond 
+                        to you directly
+                    </p>
+                    <form class="needs-validation" validate>
+                        <div class="form-row mt-4">
+                        <div class="form-group col">
+                          <label for="first" class="mb-2">First Name</label>
+                          <input type="text" class="form-control" name="firstname" id="validationCustom01" aria-describedby="nameHelp" required>
+                        </div>
+                        <div class="form-group col">
+                          <label for="last" class="mb-2">Last Name</label>
+                          <input type="text" class="form-control" name="lastname" id="validationCustom02" aria-describedby="nameHelp" required>
+                        </div>
+                    </div>
+                    <label for="email" class="mb-2 mt-3">Email</label>
+                    <input type="email" class="form-control" name="email" id= "validationCustom03" aria-describedby="nameHelp" required>
+                    <label for="message" class="mt-4">Message</label>
+                    <textarea class="form-control" id="validationCustom04" name="message" rows="12" required></textarea>
+                    <div class="d-flex flex-row justify-content-center my-5">
+                    <button type="submit" class="btn btn-success px-5">Submit</button>
+                  </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="rotate d-none d-lg-block mb-5 ml-2">
+                  <p class="color font-small copy">&copy; Confide 2019</p>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row d-none d-md-block">  
+                <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-light shadow col-10 offset-1">
+                    <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
+                      <a class='pb-2 mt-1 underline' id='c' href='how.html'>How it works</a>
+                      <a class='pb-2 mt-1 underline' id='o' href='community.html'>Community</a>
+                      <a class='pb-2 mt-1 underline' id='l' href='faqs.html'>FAQs</a>
+                      <a class='pb-2 mt-1 underline' id='a' href='contact_us.html'>Contact us</a>
+                      <a class='pb-2 mt-1 underline' id='r' href='privacy_terms.html'>Privacy & Terms</a>
+                  </div>
+                        </nav> 
+                </div>
+                <div class="d-md-none">
+                <nav class="navbar navbar-expand-lg fixed-bottom navbar-light">
+                    <div class="collapse navbar-collapse d-flex justify-content-center mb-0" id="navbarNav">
+                      <small class="text-dark font-small mb-0 copy">&copy; 2020 Confide </small>
+                  </div>
+                        </nav> 
+              </div>
+              </div>   
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script>
+        $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    
+    (function(){
+        'use strict';
+        window.addEventListener('load', function(){
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form){
+                form.addEventListener('submit', function(event){
+                    if (form.checkValidity() === false){
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classlist.add('was-validated');
+                },false);
+            });
+        }, false);
+    })();
+    
+        </script>
+  
+</body>
+</html>

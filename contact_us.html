@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body class="">
+  <div class="container-fluid mt-1 mt-sm-0 fixed-top">
+    <div class="row justify-content-between mb-3">
+      <nav class="navbar navbar-expand-lg d-flex align-center navbar-success">
+       <a href="index.html"><img src="img/confide.svg" class="navbar-brand ml-3 ml-md-5 img-fluid d-none d-sm-block">
+           <img src="img/component (21).png" alt="mobile logo" class="ml-3 d-sm-none"></a>
+         </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+       <a type="button" href="volunteer.html" class="btn btn-success mr-2 mr-md-5">Become a Volunteer</a>
+       </nav> 
+    </div> 
+</div>
+     <div class="container">
+            <div class="row offset-sm-1">
+                    <div class="col-12 mt-5">
+                            <h3>Send us a message</h3>
+                        </div>
+                        <div class="col-lg-5">
+                            <form class="needs-validation" validate>
+                                <div class="form-group">
+                                  <label for="validationCustom01" class="text-muted">Name</label>
+                                  <input type="text" placeholder="E.g. annie" class="form-control mb-3" id="validationCustom01" aria-describedby="name" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="validationCustom02" class="text-muted">Email</label>
+                                  <input type="text" placeholder="E.g. annie180@gmail.com" class="form-control w-100 mb-3" id="validationCustom02" aria-describedby="email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="validationCustom03" class="text-muted">Phone</label>
+                                  <input type="text" placeholder="08023123731" class="form-control w-100 mb-3" id="validationCustom03" aria-describedby="phone" required>
+                                </div>
+                                <div class="text-muted mt-4 mb-3">Prefered method of communication</div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="communication" id="email" value="email" checked>
+                                  <label class="form-check-label" for="email"><span></span>Email</label>
+                                </div>
+                                
+                                <div class="form-check form-check-inline ml-5">
+                                  <input class="form-check-input" type="radio" name="communication" id="phone" value="phone">
+                                  <label class="form-check-label" for="phone"><span></span>Phone</label>
+                                </div>
+                                <div class="col-lg-5">
+                                  <div class="form-group">
+                                    <label for="validationCustom05" class="text-muted" >Message</label>
+                                    <textarea class="form-control" id="validationCustom05" cols="6" required></textarea>
+                                  </div>
+                           
+                                <div class="row justify-content-center">
+                                  <button type="submit" class="btn btn-success px-5 mt-4">Submit</button>
+                              </div>
+                            </form>
+                        </div>
+                          </div>
+                    </div>
+                  
+         </div>
+
+         <div class="container-fluid">
+          <div class="row">
+              <div class="rotate d-none d-md-block">
+                  <small class="font-small mr-5 mb-5 copy" id="color">&copy; Confide 2019</small>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row d-none d-md-block">  
+              <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-light shadow col-10 offset-1">
+                  <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
+                    <a class='pb-2 mt-1 underline' id='c' href='how.html'>How it works</a>
+                    <a class='pb-2 mt-1 underline' id='o' href='community.html'>Community</a>
+                    <a class='pb-2 mt-1 underline' id='l' href='faqs.html'>FAQs</a>
+                    <a class='pb-2 mt-1 underline' id='a' href='contact_us.html'>Contact us</a>
+                    <a class='pb-2 mt-1 underline' id='r' href='privacy_terms.html'>Privacy & Terms</a>
+                </div>
+                      </nav> 
+              </div>
+              <div class="d-md-none">
+                <p class="text-dark text-center mb-0 center copy">&copy; 2020 Confide </p>
+              </div>   
+            </div>   
+  <script src="js/jQuery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+      $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+  (function(){
+        'use strict';
+        window.addEventListener('load', function(){
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form){
+                form.addEventListener('submit', function(event){
+                    if (form.checkValidity() === false){
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classlist.add('was-validated');
+                },false);
+            });
+        }, false);
+    })();
+   
+      </script>
+</body>
+</html>
